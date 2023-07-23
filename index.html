@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Yasir Ahmed"/>
+	<title>Perfuma Inventory</title>
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="general.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <h1 class="header-logo">Perfuma.lk</h1>
+                <p class="last-sync">Last synced: 7/20/2023</p>
+            </div>
+            <form class="search-form">
+                <input
+                    autofocus=""
+                    autocomplete="off"
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Search product"
+                />
+                <button class="secondary-btn open-filters-btn">
+                    <img
+                        width="100%"
+                        src="assets/filter.png"
+                        alt="filter icon"
+                    />
+                </button>
+                <button class="btn-primary">Sync Products</button>
+            </form>
+        </header>
+        <main class="main-container"></main>
+        <div class="filter-popup-container hidden">
+            <form class="filter-popup">
+                <div class="close-form-btn">
+                    <img src="assets/close.png" alt="close icon" />
+                </div>
+                <h2>List Filters</h2>
+                <div class="divider"></div>
+                <!-- <div class="filter-option">
+                    <input
+                        type="checkbox"
+                        checked
+                        name="in-stock"
+                        id="in-stock"
+                    />
+                    <label for="in-stock">In Stock</label>
+                </div> -->
+                <div class="filter-option">
+                    <input
+                        type="number"
+                        name="min-price"
+                        id="min-price"
+                        placeholder="Minimum price"
+                    />
+                    &nbsp;to&nbsp;
+                    <input
+                        type="number"
+                        name="max-price"
+                        id="max-price"
+                        placeholder="Maximum price"
+                    />
+                </div>
+                <div class="divider"></div>
+                <div></div>
+                <!-- <button type="submit" class="btn-primary">Set Filters</button> -->
+            </form>
+        </div>
+        <a class="go-to-top" href="#">
+            <img src="assets/up-arrow.png" alt="up-arrow" />
+        </a>
+        <script src="script.js"></script>
+    </body>
+</html>
